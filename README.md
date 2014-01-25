@@ -1,4 +1,4 @@
-According to the discussion on the [CHEF-3694] ticket, resource cloning, a technique many official community cookbooks rely on, is being deprecated. As such, you get a lot of warnings like this when using off-the-shelf cookbooks:
+According to the discussion on the [CHEF-3694](https://tickets.opscode.com/browse/CHEF-3694) ticket, resource cloning, a technique many official community cookbooks rely on, is being deprecated. As such, you get a lot of warnings like this when using off-the-shelf cookbooks:
 
 ```
 [2014-01-24T16:15:55+00:00] WARN: Cloning resource attributes for package[perl] from prior resource (CHEF-3694)
@@ -8,4 +8,4 @@ According to the discussion on the [CHEF-3694] ticket, resource cloning, a techn
 
 This cookbook monkey-patches Chef to try a new idea...instead of cloning resources, it tries to _reuse_ them and _merge_ their actions together. This circumvents the warning and _seems_ to make all the cookbooks that I am using function properly.
 
-This is not well-tested at this time. See my larger discussion of the issue and the solution discovery on my blog post about this.
+This is not well-tested at this time. It works for the set of community and custom cookbooks we have used it with, which includes a lot of the popular ones. Your Mileage May Vary. See my larger discussion of the issue and the solution discovery on my blog post about this.
