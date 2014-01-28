@@ -55,6 +55,9 @@ class Chef
         reusable_resource("service", svc, :nothing, &block)
       end
 
+      def directory(dir, &block)
+        reusable_resource("directory", dir, :create, &block)
+      end
     end
   end
 end
