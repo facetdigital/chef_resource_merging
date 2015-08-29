@@ -1,3 +1,4 @@
+name             'chef_resource_merging'
 maintainer       "Facet Digital, LLC"
 maintainer_email "info@facetdigital.com"
 license          "Apache 2.0"
